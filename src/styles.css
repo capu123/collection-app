@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    padding: 10px;
+}
+
+#gender {
+    color: red;
+}
+
+#name {
+    color: royalblue;
+}
+
+#myBtn {
+    margin-top: 5px;
+    float: left;
+}
+
+#removeItems {
+    background-color: grey;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    list-style-type:none;
+    
+}
+
+ul, ol {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+#logo {
+  height: 60px;
+  width: 68px;
+  float: left;
+  margin-right: 5px; margin-top: -14px;
+}

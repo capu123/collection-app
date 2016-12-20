@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-12 col-xs-12 col-lg-12">
+    <ul class="list-group">
+      <li *ngFor="let item of collectables" class="list-group-item row">
+        
+        <div class="col-xs-4 col-md-2 col-lg-2">
+            <img src="{{item.photo}}" alt="" class="img-responsive">
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4">
+             Name: <span id="name"> {{ item.name }} </span> <br />
+             Gender: <span id="gender"> {{ item.gender }} </span> <br />
+             Location: <div class="badge">{{ item.location }}</div>
+            <button (click)="onAddToCollection(item)" id="myBtn" class="btn btn-success">Add {{item.name}} to collection</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

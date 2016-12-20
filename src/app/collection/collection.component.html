@@ -1,0 +1,24 @@
+<div class="row" id="removeItems">
+  <div class="col-md-12 col-xs-12 col-lg-12">
+    <ul style="list-style-type: none;" class="list" *ngIf="collectedItems.length > 0">
+      <li *ngFor="let item of collectedItems">
+        <div class="row">
+            <div class="col-xs-3 col-md-2 col-lg-2">
+                <img src="{{item.photo}}" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-7 col-md-6 col-lg-4">
+                Name: <span id="name"> {{ item.name }} </span> <br />
+                Gender: <span id="gender"> {{ item.gender }} </span> <br />
+                Location: <div class="badge">{{ item.location }}</div>
+                
+                <button (click)="onRemoveToCollection(item)" id="myBtn" class="btn btn-danger">Remove from collection</button>
+            </div>
+        </div>
+        <hr/>
+      </li>
+    </ul>
+
+    <h3 *ngIf="collectedItems.length === 0">Start Adding Friends</h3>
+  </div>
+</div>
+
