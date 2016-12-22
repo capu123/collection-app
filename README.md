@@ -1,4 +1,8 @@
 # CollectionApp
+A simple Angular 2 App using components, services, model and routings.
+
+## Live Demo link:
+https://capu123.github.io/collection-app/market
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
